@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <div class="box">
+        <h1>Practice Registration Form</h1>
+        <label for="fullname">Full Name : </label>
+        <input type="text" name="fullname" placeholder="Enter your Full Name" autofocus required>
+
+        <br><br>
+
+
+        <label for="dateofbirth">Date of Birth : </label>
+        <input type="date" name="dob" required> 
+
+        
+        <br><br>
+
+        <label for="gender">Gender : </label>
+        <input type="radio"name= "gender"  value="female" class="inline">female
+        <input type="radio" name="gender" value="male" class="inline">Male
+        <input type="radio" name="gender" value="other" class="inline">Other
+        
+        <br><br>
+
+        <label for="country">Country : </label>
+        <select name="country" required>
+            <option value="">Select Country</option>
+            <option>USA</option>
+            <option>UK</option>
+            <option>India</option>
+            <option>Canada</option>
+        </select>
+
+        <br><br>
+
+        
+        <label for="email">Email : </label>
+        <input type="email" name="email" placeholder="Enter your email" required>
+
+        <br><br>
+        
+        <label for="password">Password : </label>
+        <input type="password" name="password" placeholder="Enter your password" minlength="6" required>
+
+        <br><br>
+
+        <label for="skills">Skills : </label>
+        <input type="checkbox" name="skills" value="HTML" class="inline">HTML
+        <input type="checkbox" name="skills" value="CSS" class="inline">CSS
+        <input type="checkbox" name="skills" value="JavaScript" class="inline">JavaScript
+
+        <br><br>
+
+
+        <label for="experiencelevel">Experience Level : </label>
+        <select name="experience" required>
+            <option value="">Select Level</option>
+            <option>Beginner</option>
+            <option>Intermediate</option>
+            <option>Advanced</option>
+        </select> 
+        
+        <br><br>
+        
+        <label for="resume">Upload Resume : </label>
+        <input type="file" name="resume" required>
+
+        <br><br>
+
+        <label for="bio">Short Bio : </label>
+        <textarea name="bio" rows="4" maxlength="200" placeholder="Tell us about yourself (max 200 characters)"></textarea>
+        
+        <br><br>
+
+
+        <input type="checkbox" name="agreement" required>
+        I agree to the terms and conditions *
+
+        <br><br>
+        
+        <div class="box1">
+        <button type="submit"class="submit-btn">Submit</button>
+        <button type="reset" class="reset-btn">Reset</button>
+        </div>
+    </div>
+    </form>
+</body>
+</html>
